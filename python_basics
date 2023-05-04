@@ -1,0 +1,53 @@
+1. Create a zoo.py file first. Define the hours() function, which prints the string &#39;Open 9-5 daily&#39;.
+Then, use the interactive interpreter to import the zoo module and call its hours() function.
+
+Ans:- You can save a file in compiler or your python ground by naming that "zoo.py"
+not below code as definition in it :-
+def hours():
+  print("jai shree ram")
+  
+  then after this , open another python compiler and import zoo in compiler and call hours unction in it to find the out put as below.
+  
+  import zoo
+  zoo.hours()
+  
+  after running above code output will be "jai shree ram" as we mentioned in another file "zoo.py"
+  
+  2. In the interactive interpreter, import the zoo module as menagerie and call its hours() function.
+  
+  Ams:-
+  this is basically same question as above , here we are assigning another variable to this zoo name that will make the code writing easier
+  example are as below:_
+  
+  import zoo as ram
+  ram.hours()
+  and output wiill be same as we got saved in out file "zoo.py"
+  
+  3. Using the interpreter, explicitly import and call the hours() function from zoo.
+  Ans:-
+  Yes we can call that directly too , that is not too hard , find example as below.
+  
+  from zoo import hours
+  
+  hours()
+  
+  and output will be the same as we got saved in file "zoo.py"
+  
+  
+  4. Import the hours() function as info and call it.
+  Ans:-
+  This is like assigning the many variable to a single function , we can assign hours() as info and we can call it as below:-
+  
+  from zoo import hours as info
+  info()
+  
+  and output will be as we got saved in our file "zoo.py"
+  
+  5. Create a plain dictionary with the key-value pairs &#39;a&#39;: 1, &#39;b&#39;: 2, and &#39;c&#39;: 3, and print it out.
+  
+  
+  
+  
+  
+  
+  
