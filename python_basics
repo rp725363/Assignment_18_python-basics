@@ -1,53 +1,52 @@
-1. Create a zoo.py file first. Define the hours() function, which prints the string &#39;Open 9-5 daily&#39;.
-Then, use the interactive interpreter to import the zoo module and call its hours() function.
-
-Ans:- You can save a file in compiler or your python ground by naming that "zoo.py"
-not below code as definition in it :-
+1. Create a zoo.py file first. Define the hours() function, which prints the string 'Open 9-5 daily'. Then, use the interactive interpreter to import the zoo module and call its hours() function.
+Ans:-
+Here is how we can make a module with function  hours as below:-
 def hours():
-  print("jai shree ram")
-  
-  then after this , open another python compiler and import zoo in compiler and call hours unction in it to find the out put as below.
-  
-  import zoo
-  zoo.hours()
-  
-  after running above code output will be "jai shree ram" as we mentioned in another file "zoo.py"
-  
-  2. In the interactive interpreter, import the zoo module as menagerie and call its hours() function.
-  
-  Ams:-
-  this is basically same question as above , here we are assigning another variable to this zoo name that will make the code writing easier
-  example are as below:_
-  
-  import zoo as ram
-  ram.hours()
-  and output wiill be same as we got saved in out file "zoo.py"
-  
-  3. Using the interpreter, explicitly import and call the hours() function from zoo.
-  Ans:-
-  Yes we can call that directly too , that is not too hard , find example as below.
-  
-  from zoo import hours
-  
-  hours()
-  
-  and output will be the same as we got saved in file "zoo.py"
-  
-  
-  4. Import the hours() function as info and call it.
-  Ans:-
-  This is like assigning the many variable to a single function , we can assign hours() as info and we can call it as below:-
-  
-  from zoo import hours as info
-  info()
-  
-  and output will be as we got saved in our file "zoo.py"
-  
-  5. Create a plain dictionary with the key-value pairs &#39;a&#39;: 1, &#39;b&#39;: 2, and &#39;c&#39;: 3, and print it out.
-  
-  
-  
-  
-  
-  
-  
+       print("Open 9-5 daily")
+now we have save this file as zoo.py  and then we can import the "zoo" module in another file by writing below code
+import zoo
+zoo.hours()
+and ourput will be Open 9-5 daily.
+2. In the interactive interpreter, import the zoo module as menagerie and call its hours() function.
+Ans:-
+Here is how we can call zoo module by giving a variable ;
+import zoo as menagerie 
+menagerie .hours()
+and here output will be "Open 9-5 daily"
+3. Using the interpreter, explicitly import and call the hours() function from zoo.
+Ans:-
+Here is how we can call explicitly hours with below code ;
+from zoo import hours
+hours()
+here output will be "Open 9-5 daily"
+4. Import the hours() function as info and call it.
+Ans:-
+here is below how we can call  hours ffunction as below as info and then we can use it:-
+from  zoo import hours as info
+info()
+here also output will be "Open 9-5 daily"
+5. Create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it out.
+Ans:-
+here as below we can create a plain directory and we can print the same as well:-
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+print(my_dict)
+Here as above code output will be "{'a': 1, 'b': 2, 'c': 3}"
+
+6.Make an OrderedDict called fancy from the same pairs listed in 5 and print it. Did it print in the same order as plain?
+Ans:-
+To create orderdict we have to import the orderdict from collection and the we can write fency dict as below :-
+rom collections import OrderedDict
+
+fancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+print(fancy)
+and here in above code output will be as below :-
+OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+7. Make a default dictionary called dict_of_lists and pass it the argument list. Make the list dict_of_lists['a'] and append the value 'something for a' to it in one assignment. Print dict_of_lists['a'].
+Ans:-
+Here is how we can create a default dict as below by importing defaultdict from collection and the we can append dict content as follows:-
+from collection import defaultdict
+dict_of_list=defaultdict(List)
+dict_of_list["a"],append("something for a")
+and then if we call a as follow , then output will be accordingly.
+print(dict_of_list["a"])
+here output will be ["something for a"]
